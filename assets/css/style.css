@@ -1,0 +1,133 @@
+:root {
+  --sm-primary: #2f5233;
+  --sm-primary-dark: #203a24;
+  --sm-accent: #c9a24b;
+  --sm-bg: #f4f6f5;
+}
+
+body {
+  background-color: var(--sm-bg);
+  font-family: "Segoe UI", Roboto, Arial, sans-serif;
+}
+
+.app-wrapper {
+  min-height: 100vh;
+}
+
+.sidebar-top {
+  background-color: var(--sm-primary-dark);
+}
+
+.sidebar {
+  width: 240px;
+  background-color: var(--sm-primary-dark);
+  color: #fff;
+  min-height: 100vh;
+}
+
+.sidebar-brand {
+  padding: 1.25rem 1rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #fff;
+  align-items: center;
+  gap: 0.5rem;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.sidebar-nav .nav-link {
+  color: rgba(255,255,255,0.8);
+  padding: 0.75rem 1.25rem;
+  border-left: 3px solid transparent;
+}
+
+.sidebar-nav .nav-link i {
+  width: 1.4rem;
+  display: inline-block;
+}
+
+.sidebar-nav .nav-link:hover {
+  background-color: rgba(255,255,255,0.06);
+  color: #fff;
+}
+
+.sidebar-nav .nav-link.active {
+  background-color: rgba(255,255,255,0.1);
+  color: #fff;
+  border-left-color: var(--sm-accent);
+  font-weight: 600;
+}
+
+.main-content {
+  min-height: 100vh;
+}
+
+.topbar {
+  background: #fff;
+  padding: 0.9rem 1.5rem;
+  border-bottom: 1px solid #e3e6e5;
+}
+
+.content-area {
+  padding: 1.5rem;
+}
+
+.card-stat {
+  border: none;
+  border-radius: 0.6rem;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+}
+
+.card-stat .icon-box {
+  width: 48px;
+  height: 48px;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  color: #fff;
+}
+
+.table-responsive {
+  background: #fff;
+  border-radius: 0.5rem;
+}
+
+.badge-stok-habis {
+  background-color: #dc3545;
+}
+
+.badge-stok-menipis {
+  background-color: #fd7e14;
+}
+
+.badge-stok-aman {
+  background-color: #198754;
+}
+
+.login-wrapper {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, var(--sm-primary-dark), var(--sm-primary));
+}
+
+.login-card {
+  border: none;
+  border-radius: 0.75rem;
+  overflow: hidden;
+  max-width: 380px;
+  width: 100%;
+}
+
+@media print {
+  .sidebar, .topbar, .no-print, .sidebar-top {
+    display: none !important;
+  }
+  .main-content, .content-area {
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+}
